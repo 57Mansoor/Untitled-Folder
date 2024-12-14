@@ -1,0 +1,148 @@
+body>first{
+    background-color: black;
+    
+     
+    background-blend-mode:lighten;
+}
+
+#navbar{
+color:white;
+display:flex;
+flex-direction: row;
+ 
+ 
+ justify-content: space-between;
+}
+ul,li{
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+    column-gap: 100px;
+    list-style-position: center;
+     
+}
+#li{
+    padding-right:30%;
+}
+ #img
+ {
+    padding-top:250px;
+ }
+ .video{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+ }
+ .backvideo{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Send the video behind the content */
+    object-fit: cover;
+
+ }
+ #first{
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Revolution&display=swap');
+    font-family:"Protest Revolution", serif;
+    background:linear-gradient(90deg, #833ab4,#fd1d1d,#fcb045);
+    width:100%;
+    height:100%;
+    padding-top:15%;
+    padding-bottom:20%;
+    font-size:150%;
+    z-index=1;
+    position:fixed;
+
+}
+#first>#btn>button>a{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+}
+#first>#btn>button{
+    width: 30%;
+    height:30px;
+    border-radius:30px;
+    background-color: black;
+    
+}
+#first>#btn>button>a:hover{
+    color:red;
+}
+#first>#btn>button:hover{
+    background-color: rgb(18, 174, 231);
+}
+ h1{
+    animation:moveform 1s ease-in-out;
+ }
+ h4{
+    animation:moveform 4s ease-in-out;
+ }
+ p{
+    animation:moveform 8s ease-in-out;
+ }
+ @keyframes moveform{
+    0%{
+        transform:translateX(100%);
+
+    }
+    100%{
+        transform:translateX(0);
+    }
+ }
+
+ #workout{
+display:grid;
+grid-template-columns: repeat(3,1fr);
+flex-direction:row;
+justify-content: space-between;
+padding:10%;
+ 
+
+ }
+ figcaption{
+    text-align:center;
+     
+ }
+ figcaption>a{
+    text-decoration: none;
+    /* border:2px solid black; */
+    border-radius: 15px;
+    background-color: white;
+    font-size: 60px;
+    height:40px;
+    width:50px;
+     
+ }
+ #workout2{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-direction:row;
+    justify-content: space-between;
+    padding:10%;
+     
+    
+     }
+@media (min-width:781) and (max-width:1280){
+
+}
+
+@media (min-width:451px) and (max-width:781px){
+#workout{
+display: grid;
+ grid-template-columns: repeat(1,1fr);
+}
+#workout2{
+   display:grid;
+   grid-template-columns: repeat(1,1fr);
+}
+}
+ 

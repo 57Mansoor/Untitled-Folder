@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>bulb on and off</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.862);
+        }
+        button{
+            background-color:red;
+            color:white;
+            width:80px;
+            height:30px;
+        }
+    </style>
 </head>
 <body>
-   
-        <center>
-         <button onclick="bulboff()">off</button>
-         <img src="bulboff.png" alt="noimage" id="img" width="300px;">
-         <button onclick="bulbon()">on</button>
-        </center> 
-     
+   <div id="fs">
+    <center>
+        <button onclick="bulboff()">off</button>
+        <img src="bulboff.png" alt="noimage" id="img" width="300px;">
+        <button onclick="bulbon()">on</button>
+       </center> 
+    
+   </div>
+         
     
      <script>
         
