@@ -9,16 +9,16 @@
             background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
             background-attachment: fixed;
         }
-        th,td{
+      .tab1>table,th,td{
             border: 2px solid black;
             text-align: center;
-           
             font-size: 40px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             background-color:rgb(38, 180, 219);
             color:white;
             
         }
+        
         h1{
             font-family: Georgia, 'Times New Roman', Times, serif;  
             font-size: 40px; 
@@ -43,10 +43,13 @@
         td:hover{
             background-color: red;
         }
+        #tab>tbody{
+            background-color: orange;
+        }
 
         @media (max-width:600px){
             table,td,th{
-                font-size: 20px;
+                font-size: 80%;
             }
             h1{
                 font-size: 20px;
@@ -62,8 +65,10 @@
     
         <div id="table">
             <center>
-                <h1>This is Time Table to make Remember of  Todays </h1>
+                <h1>This is the Time Table to make Remember of  Todays workouts</h1>
             </center>
+            
+
             
             <table>
                 <thead>
@@ -71,7 +76,7 @@
                         <th>SNO</th>
                         <th>DAY</th>
                         <th>WORKOUTS</th>
-                        <th>EACH SETS</th>
+                        <th>EACH EXE SETS</th>
                          
                     </tr>
                 </thead>
@@ -108,16 +113,102 @@
                         <td>3X10</td>
                     </tr>
                     <tr>
-                        <tD>1</tD>
+                        <tD>6</tD>
                         <tD>SATURDAY</tD>
                         <td>LEGS</td>
                         <td>3X12</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>SUNDAY</td>
+                        <td>RUNNING</td>
+                        <td>3 ROUNDS</td>
                     </tr>
 
                 </tbody>
                 
             </table>
-        </div>
+       
+            <br><br><br>
+            
+            <center>
+                <h1>This is the Time Table to make Remember of  Todays Food</h1>
+            </center>
+            <br>
+             
+            <table>
+                <thead>
+                    <th>Day</th>
+                    <th>Breakfast</th>
+                    <th>Snack</th>
+                    <th>Lunch</th>
+                    <th>Snack</th>
+                    <th>Dinner</th>
+                </thead>
+                <tbody id="tab">
+                    <tr>
+                        <td>Monday</td>
+                        <td>Scrambled eggs with mushrooms, oatmeal, and a pear</td>
+                        <td>Low-fat cottage cheese with blueberries</td>
+                        <td>Venison burger, white rice, and broccoli</td>
+                        <td>Protein shake and a banana</td>
+                        <td> Salmon, quinoa, and asparagus</td>
+                         
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Protein pancakes with light syrup, peanut butter, and raspberries</td>
+                        <td>Hard-boiled eggs and an apple</td>
+                        <td>Sirloin steak, sweet potato, and spinach salad with vinaigrette</td>
+                        <td>Protein shake and a peach</td>
+                        <td>Ground turkey and marinara sauce over pasta, with a side of cauliflowe</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Chicken sausage with egg, roasted potatoes, and an apple</td>
+                        <td>Greek yogurt, strawberries, and almonds</td>
+                        <td>Turkey breast, basmati rice, and mushrooms</td>
+                        <td>Protein shake and grapes</td>
+                        <td>Mackerel, brown rice, asparagus, and salad leaves with vinaigrette</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Ground turkey, egg, cheese, and salsa in a whole-grain tortilla</td>
+                        <td>Yogurt with granola and a pear</td>
+                        <td>Chicken breast, baked potato, sour cream, and broccoli</td>
+                        <td>Protein shake and mixed berries</td>
+                        <td>Stir-fry with shrimp, egg, brown rice, bell peppers, peas, and carrots</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Blueberries, strawberries, and Greek yogurt on overnight oats</td>
+                        <td>Jerky and mixed nuts with an orange</td>
+                        <td>Tilapia fillets with lime juice, black and pinto beans, and seasonal veggies</td>
+                        <td>Protein shake and watermelon</td>
+                        <td>Ground beef with corn, brown rice, green peas, and beans</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Ground turkey and egg with corn, bell peppers, cheese, and salsa</td>
+                        <td>Can of tuna with crackers and an apple</td>
+                        <td>Tilapia fillet and potato wedges with steamed broccoli and cauliflower
+                        </td>
+                        <td>Protein shake and pear</td>
+                        <td>Diced beef with rice, black beans, bell peppers, onions, cheese, and pico de gallo</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Eggs sunny-side up and avocado toast with fresh fruit</td>
+                        <td>Protein balls with almond butter and an orange</td>
+                        <td>Pork tenderloin slices with roasted garlic potatoes, green beans, and carrots</td>
+                        <td>Protein shake and strawberries</td>
+                        <td>Turkey meatballs, marinara sauce, and parmesan cheese over pasta, with a side of sautéed kale</td>
+                    </tr>
+                </tbody>
+
+            </table>
+         
+     </div>
     </center>
  
 </body>
