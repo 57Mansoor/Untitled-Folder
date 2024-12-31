@@ -1,0 +1,27 @@
+.image{
+    padding:50px;
+    box-shadow: 10px 10px black;
+    width:50%;
+    height:50%;
+     background-color: rgb(181, 12, 12);
+}
+body{
+    background-color: rgb(80, 181, 236);
+}
+#img{
+    width:100%;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.image>button{
+    background-color: black;
+    color:white;
+    width:30%;
+    height:20%;
+     margin-right: 30px;
+}
+
+.image>button:hover{
+    transform: scale(1.1);
+}
